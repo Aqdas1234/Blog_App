@@ -4,7 +4,7 @@ from .views import UserRegisterView, UserLogoutView,BlogPostDetailView,BlogPostC
 
 urlpatterns = [
     path('signup/', UserRegisterView.as_view(), name='signup'),
-    path('login/', TokenObtainPairView.as_view(), name='login'),  # JWT Login
+    path('login/', TokenObtainPairView.as_view(), name='login'),  
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('logout/', UserLogoutView.as_view(), name='logout'),
     path('blogs/create', BlogPostCreateView.as_view(), name='blog-create'),

@@ -129,7 +129,7 @@ CKEDITOR_5_CONFIGS = {
             "link",
             "blockQuote",
             "imageUpload",
-            "mediaEmbed",   # 🔹 Video Embed ka option add kar diya
+            "mediaEmbed",   
             "|",
             "undo",
             "redo",
@@ -143,7 +143,7 @@ CKEDITOR_5_CONFIGS = {
             ]
         },
         "mediaEmbed": {
-            "previewsInData": True  # 🔹 Ye option video preview ko content ke andar show karega
+            "previewsInData": True  
         },
         "uploadUrl": "/upload/",
     }

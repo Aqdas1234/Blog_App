@@ -24,9 +24,9 @@ class UserRegisterSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         validated_data.pop('password2')  
-        password = validated_data.pop('password')  # Extract password
+        password = validated_data.pop('password')  
         user = User(**validated_data)  
-        user.set_password(password)  # Hash password
+        user.set_password(password)  
         user.save()
         return user
 
